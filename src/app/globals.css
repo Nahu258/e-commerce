@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .nav-link {
-  @apply block text-gray-400 no-underline py-2 sm:py-0;
+  @apply block text-gray-400 no-underline py-[10px] sm:py-0;
 }
 
 /* img {
