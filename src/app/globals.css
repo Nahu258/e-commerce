@@ -5,6 +5,12 @@
 .nav-link {
   @apply block text-gray-400 no-underline py-[10px] sm:py-0;
 }
+.primary-button {
+  @apply inline-flex items-center px-[15px] py-[5px] rounded-md font-medium cursor-pointer bg-white text-black no-underline;
+}
+.secondary-button {
+  @apply inline-flex items-center px-[15px] py-[5px] rounded-md font-medium cursor-pointer bg-transparent border border-white text-white no-underline;
+}
 
 /* img {
   max-height: 100%;
