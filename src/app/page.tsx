@@ -1,8 +1,9 @@
+import Featured from '@/components/Featured';
 
 export default function Home() {
   return (
     <main>
-      Home sweet home
+      <Featured/>
     </main>
   );
 }
