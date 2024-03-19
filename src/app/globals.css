@@ -2,9 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-slate-200;
+}
+
 .nav-link {
   @apply block text-gray-400 no-underline py-[10px] sm:py-0;
 }
+/* .primary-button {
+  @apply px-[15px] py-[5px] inline-flex items-center no-underline cursor-pointer font-medium;
+} */
 .primary-button {
   @apply inline-flex items-center px-[15px] py-[5px] rounded-md font-medium cursor-pointer bg-white text-black no-underline;
 }

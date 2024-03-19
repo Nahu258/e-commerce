@@ -10,7 +10,7 @@ function Header() {
       <div className='max-w-[880px] mx-auto px-5'>
         <div className='flex justify-between py-5 px-0'>
           <Link href='/' className='text-white no-underline text-xl font-bold relative z-3'>Ecommerce</Link>
-          <nav className={`${mobileNavActive ? 'block' : 'hidden'} gap-4 fixed top-0 bottom-0 left-0 right-0 py-[70px] px-[20px] pb-[20px] md:p-0 bg-[#222]`}>
+          <nav className={`${mobileNavActive ? 'block' : 'hidden'} gap-4 fixed top-0 bottom-0 left-0 right-0 py-[70px] px-[20px] pb-[20px] bg-[#222] md:flex md:static md:p-0`}>
             <Link href='/' className='nav-link'>Home</Link>
             <Link href='/products' className='nav-link'>All Products</Link>
             <Link href='/categories' className='nav-link'>Categories</Link>
