@@ -1,22 +1,17 @@
-'use client'
 import ProductsGrid from '@/components/ProductsGrid'
-import { useEffect, useState } from 'react'
 
-function ProductsPage() {
-  const [products, setProducts] = useState([])
-  const fetchProducts = async () => {
-    const res = await fetch('/api/products')
-    const products = await res.json()
-    return products
-  }
+async function getProducts() {
+  const res = await fetch('http://localhost:3000/api/products')
 
-  useEffect(() => {
-    fetchProducts().then((products) => setProducts(products))
-  }, [])
+  return res.json()
+}
+
+async function ProductsPage() {
+  const products = await getProducts()
 
   return (
     <div className='max-w-[800px] my-0 mx-auto'>
-      <h1>All Products</h1>
+      <h1 className='my-6 font-bold font text-2xl'>All Products</h1>
       <ProductsGrid products={products}/>
     </div>
   )
